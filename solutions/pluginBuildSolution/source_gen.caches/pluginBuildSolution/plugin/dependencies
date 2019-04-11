@@ -17,7 +17,16 @@
     <classNode dependClassName="javax.swing.Icon" />
     <classNode dependClassName="javax.swing.JOptionPane" />
     <classNode dependClassName="jetbrains.mps.ide.actions.MPSCommonDataKeys" />
+    <classNode dependClassName="jetbrains.mps.ide.newModuleDialogs.NewLanguageDialog" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.project.MPSProject" />
+    <classNode dependClassName="jetbrains.mps.smodel.Language" />
+    <classNode dependClassName="jetbrains.mps.smodel.LanguageAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.workbench.action.BaseAction" />
   </dependency>
   <dependency className="pluginBuildSolution.plugin.TestPluginActionGroup_ActionGroup">

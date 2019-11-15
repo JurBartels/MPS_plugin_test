@@ -10,15 +10,11 @@ import java.awt.Frame;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.project.MPSProject;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.ide.newModuleDialogs.NewLanguageDialog;
-import jetbrains.mps.smodel.Language;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.jetbrains.mps.openapi.model.SModel;
-import jetbrains.mps.smodel.LanguageAspect;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import org.rascalmpl.library.Rascal2MPS;
 import javax.swing.JOptionPane;
+import io.usethesource.vallang.IConstructor;
 
 public class TestAction_Action extends BaseAction {
   private static final Icon ICON = null;
@@ -53,17 +49,13 @@ public class TestAction_Action extends BaseAction {
   }
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
-    NewLanguageDialog dialog = new NewLanguageDialog(event.getData(MPSCommonDataKeys.MPS_PROJECT), "newLang");
-    dialog.setModal(true);
-    dialog.show();
-    Language newLang = dialog.getModule();
-    event.getData(MPSCommonDataKeys.MPS_PROJECT).addModule(newLang);
-    SNode node = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x1103556dcafL, "jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration"));
-    SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "newInterface");
-    SModel structModel = LanguageAspect.STRUCTURE.get(newLang);
-    structModel.addRootNode(node);
-    JOptionPane.showMessageDialog(event.getData(MPSCommonDataKeys.FRAME), "");
-
+    TestAction_Action.this.testExternal(event);
+  }
+  /*package*/ void testExternal(final AnActionEvent event) {
+    Path p = Paths.get("C:\\Dev\\RascalExample\\src");
+    Rascal2MPS m = new Rascal2MPS();
+    JOptionPane.showMessageDialog(event.getData(MPSCommonDataKeys.FRAME), p.toUri().toString());
+    IConstructor rascalAST = m.getAST(p.toUri().toString(), "Abstract", "EXP");
 
   }
 }

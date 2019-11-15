@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:36b67687-fc33-45b0-b136-ee0217788511(Rascal2MPSDebug.main)/434450299177406245">
+    <file name="RascalDebug.java">
+      <node id="434450299177408740" at="14,0,15,0" concept="2" trace="vf" />
+      <node id="434450299177417852" at="15,0,16,0" concept="2" trace="heap" />
+      <node id="434450299177418044" at="16,0,17,0" concept="2" trace="root" />
+      <node id="434450299177418209" at="17,0,18,0" concept="2" trace="eval" />
+      <node id="434450299177419483" at="22,81,23,90" concept="1" />
+      <node id="434450299177534622" at="23,90,24,119" concept="1" />
+      <node id="434450299177576062" at="24,119,25,87" concept="1" />
+      <node id="434450299177591321" at="25,87,26,16" concept="5" />
+      <node id="434450299177582500" at="26,16,27,0" concept="6" />
+      <node id="434450299177611684" at="30,80,31,38" concept="4" />
+      <node id="434450299177612900" at="31,38,32,67" concept="5" />
+      <node id="434450299177418774" at="19,0,21,0" concept="0" trace="RascalDebug#()V" />
+      <node id="434450299177610358" at="30,0,34,0" concept="7" trace="run#(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="434450299177419026" at="22,0,29,0" concept="3" trace="getAST#(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LRascal2MPSDebug/main/RascalDebug;" />
+      <scope id="434450299177418777" at="19,24,19,24" />
+      <scope id="434450299177418774" at="19,0,21,0" />
+      <scope id="434450299177610360" at="30,80,32,67">
+        <var name="r" id="434450299177611685" />
+      </scope>
+      <scope id="434450299177610358" at="30,0,34,0">
+        <var name="ASTroot" id="434450299177614040" />
+        <var name="module" id="434450299177613785" />
+        <var name="sourcefolder" id="434450299177613588" />
+      </scope>
+      <scope id="434450299177419029" at="22,81,27,0" />
+      <scope id="434450299177419026" at="22,0,29,0">
+        <var name="ASTRoot" id="434450299177419304" />
+        <var name="module" id="434450299177419214" />
+        <var name="sourceFolder" id="434450299177419109" />
+      </scope>
+      <unit id="434450299177406245" at="13,0,36,0" name="Rascal2MPSDebug.main.RascalDebug" />
+    </file>
+  </root>
+</debug-info>
+

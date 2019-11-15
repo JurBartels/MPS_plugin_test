@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="Rascal2MPSDebug.main.RascalDebug">
+    <classNode dependClassName="io.usethesource.vallang.IValueFactory" />
+    <classNode dependClassName="java.io.PrintWriter" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="org.rascalmpl.interpreter.Evaluator" />
+    <classNode dependClassName="org.rascalmpl.interpreter.env.GlobalEnvironment" />
+    <classNode dependClassName="org.rascalmpl.interpreter.env.ModuleEnvironment" />
+    <classNode dependClassName="org.rascalmpl.interpreter.load.StandardLibraryContributor" />
+    <classNode dependClassName="org.rascalmpl.values.ValueFactoryFactory" />
+  </dependency>
+</dependenciesRoot>
+

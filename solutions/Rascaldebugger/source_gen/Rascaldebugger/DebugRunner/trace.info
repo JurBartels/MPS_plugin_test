@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:47ba1627-91d1-4119-8c24-afc624808d36(Rascaldebugger.DebugRunner)/3536978080532995690">
+    <file name="DebugRunner.java">
+      <node id="3536978080533023960" at="12,42,13,36" concept="0" />
+      <node id="2921625155541592512" at="13,36,14,54" concept="0" />
+      <node id="2921625155541595931" at="14,54,15,79" concept="0" />
+      <node id="3536978080533000385" at="12,0,17,0" concept="1" trace="main#([Ljava/lang/String;)V" />
+      <scope id="3536978080533000388" at="12,42,15,79">
+        <var name="m" id="3536978080533023961" />
+        <var name="p" id="2921625155541592513" />
+        <var name="rascalAST" id="2921625155541595932" />
+      </scope>
+      <scope id="3536978080533000385" at="12,0,17,0">
+        <var name="args" id="3536978080533000599" />
+      </scope>
+      <unit id="3536978080532995690" at="10,0,18,0" name="Rascaldebugger.DebugRunner.DebugRunner" />
+    </file>
+  </root>
+</debug-info>
+
